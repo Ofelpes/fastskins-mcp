@@ -1,0 +1,39 @@
+{
+  "name": "@fastskins/mcp",
+  "version": "1.0.0",
+  "description": "Servidor MCP oficial do Fast Skins (fastskins.gg): preços de skins de CS2 ao vivo nas lojas brasileiras (Pix) e mercados globais.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "cs2",
+    "counter-strike-2",
+    "skins",
+    "brazil",
+    "pix",
+    "fastskins"
+  ],
+  "homepage": "https://fastskins.gg",
+  "bugs": {
+    "url": "https://github.com/Ofelpes/fastskins-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ofelpes/fastskins-mcp.git"
+  },
+  "license": "MIT",
+  "author": "Fast Skins (https://fastskins.gg)",
+  "type": "module",
+  "bin": {
+    "fastskins-mcp": "./bin/fastskins-mcp.mjs"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE",
+    "glama.json",
+    "smithery.yaml"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      FASTSKINS_GATEWAY_URL:
+        type: string
+        title: Gateway URL
+        description: Optional override for Fast Skins Gateway URL (default https://widget.fastskins.gg)
+        default: https://widget.fastskins.gg
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@fastskins/mcp'],
+      env: config.FASTSKINS_GATEWAY_URL ? { FASTSKINS_GATEWAY_URL: config.FASTSKINS_GATEWAY_URL } : {}
+    })
