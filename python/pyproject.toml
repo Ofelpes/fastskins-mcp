@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastskins-mcp"
+version = "1.0.0"
+description = "Official MCP Server for Fast Skins (fastskins.gg) - real-time CS2 skin prices in Brazil (Pix) and global markets."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Fast Skins", email = "contato@fastskins.gg" }]
+keywords = ["mcp", "cs2", "counter-strike-2", "skins", "fastskins", "brazil"]
+
+[project.urls]
+Homepage = "https://fastskins.gg"
+Repository = "https://github.com/Ofelpes/fastskins-mcp"
+Documentation = "https://fastskins.gg/docs"
+
+[project.scripts]
+fastskins-mcp = "fastskins_mcp:main"
