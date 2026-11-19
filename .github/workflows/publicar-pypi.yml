@@ -1,0 +1,21 @@
+name: Publicar no PyPI
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   # publicacao confiavel (Trusted Publishing), sem token
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Gerar o pacote
+        run: |
+          python -m pip install --upgrade build
+          python -m build python --outdir dist
+      - name: Publicar
+        uses: pypa/gh-action-pypi-publish@release/v1
