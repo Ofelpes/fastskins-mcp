@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ofelpes/fastskins-mcp.git"
+    "url": "git+https://github.com/Ofelpes/fastskins-mcp.git"
   },
   "license": "MIT",
   "author": "Fast Skins (https://fastskins.gg)",
   "type": "module",
   "bin": {
-    "fastskins-mcp": "./bin/fastskins-mcp.mjs"
+    "fastskins-mcp": "bin/fastskins-mcp.mjs"
   },
   "files": [
     "bin/",
